@@ -7,11 +7,13 @@ The recommendation system provides recommendations of articles using different m
 2. User-User Based Collaborative Filtering
 3. Matrix Factorization
 
-[Recommendation System webapp](https://recengine-eagrqlohkcewkibklrffzr.streamlit.app/)
+https://github.com/naoufal51/rec_engine/assets/15954923/f70faa40-89ca-4b1b-ba8f-f889feefc4be
+
 ## Live App
 **Click on the following link to access the web app:**
 
-https://github.com/naoufal51/rec_engine/assets/15954923/f70faa40-89ca-4b1b-ba8f-f889feefc4be
+
+[Recommendation System webapp](https://recengine-eagrqlohkcewkibklrffzr.streamlit.app/)
 
 ## Getting Started
 ### Dependencies
