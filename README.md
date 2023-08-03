@@ -7,7 +7,7 @@ The recommendation system provides recommendations of articles using different m
 2. User-User Based Collaborative Filtering
 3. Matrix Factorization
 
-https://github.com/naoufal51/rec_engine/assets/15954923/f70faa40-89ca-4b1b-ba8f-f889feefc4be
+https://github.com/naoufal51/rec_engine/assets/15954923/dc723add-9910-4274-ad56-a63ac84a2c1e
 
 ## Live App
 **Click on the following link to access the web app:**
