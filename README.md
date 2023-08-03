@@ -12,8 +12,7 @@ https://github.com/naoufal51/rec_engine/assets/15954923/dc723add-9910-4274-ad56-
 ## Live App
 **Click on the following link to access the web app:**
 
-
-[Recommendation System webapp](https://recengine-eagrqlohkcewkibklrffzr.streamlit.app/)
+[Recommendation System webapp](https://recengine-uypcoopcphebsynchvybxa.streamlit.app/)
 
 ## Getting Started
 ### Dependencies
