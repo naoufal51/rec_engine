@@ -10,8 +10,8 @@ def load_model():
 
 def main():
     st.title('IBM Article Recommender System')
-    st.markdown("<h3 style='text-align: center; color: white;'>Welcome to our article recommender system.</h3>", unsafe_allow_html=True)
-    st.markdown("<h4 style='text-align: center; color: white;'>Enter a user id to get personalized article recommendations.</h4>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center;'>Welcome to our article recommender system.</h3>", unsafe_allow_html=True)
+    st.markdown("<h4 style='text-align: center; '>Enter a user id to get personalized article recommendations.</h4>", unsafe_allow_html=True)
     st.write("We use Collaborative Filtering to generate recommendations. If no user is specified, we recommend the most popular articles.")
     st.image('images/screen-shot-2018-09-17-at-3.40.30-pm.png', caption='Dashboard for Articles on the IBM Watson Platform. source: Udacity')
 
@@ -25,7 +25,7 @@ def main():
         if user_id:
             try:
                 recs, rec_names = model.user_user_recs_part2(user_id, m=num_recs)
-                st.markdown("<h4 style='text-align: center; color: white;'>Recommended Articles:</h4>", unsafe_allow_html=True)
+                st.markdown("<h4 style='text-align: center;'>Recommended Articles:</h4>", unsafe_allow_html=True)
                 data = {'Article Ids': recs, 'Article Names': rec_names}
                 df = pd.DataFrame(data)
                 st.table(df)
@@ -34,7 +34,7 @@ def main():
         else:
             st.sidebar.write("Please enter a user id.")
     else:
-        st.markdown("<h4 style='text-align: center; color: white;'>Most Popular Articles:</h4>", unsafe_allow_html=True)
+        st.markdown("<h4 style='text-align: center;'>Most Popular Articles:</h4>", unsafe_allow_html=True)
         top_articles = model.get_top_article_ids(num_recs)
         top_article_names = model.get_article_names(top_articles)
         data = {'Article Ids': top_articles, 'Article Names': top_article_names}
@@ -42,7 +42,7 @@ def main():
         st.table(df)
         
     st.divider()
-    st.markdown("<h4 style='text-align: center; color: white;'>Histogram of User-Article Interactions</h4>", unsafe_allow_html=True)
+    st.markdown("<h4 style='text-align: center;'>Histogram of User-Article Interactions</h4>", unsafe_allow_html=True)
     hist_values = model.df['user_id'].value_counts().values
     fig = go.Figure(data=[go.Histogram(x=hist_values, nbinsx=20, marker_color='LightSkyBlue')])
     fig.update_layout(
